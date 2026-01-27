@@ -5,7 +5,7 @@ description: |
 
   AUTOMATIC TRIGGER: Use this skill whenever a task is requested or a new request/question is submitted (considered as a new task).
 
-  Features: task creation/modification, timestamped status management (backlog, todo, in_progress, done, cancelled), multi-project tracking, separate history to save tokens, optional S3 sync.
+  Features: task creation/modification, timestamped status management (backlog, todo, in_progress, done, cancelled), multi-project tracking, separate history to save tokens, optional S3 sync, auto-commit with jj on task completion.
 
   Supported queries: "What is the current task?", "What are the pending tasks?", "Tasks completed this week?", "Projects in progress?", "Status of project X?"
 ---
@@ -53,6 +53,9 @@ If `.claude/global-project/` does not exist, create:
 3. Update timestamps:
    - `started_at` when transitioning to `in_progress`
    - `completed_at` when transitioning to `done` or `cancelled`
+4. If transitioning to `done` or `cancelled` and `jj_repo: true` in `project.md`:
+   - Commit changes using jj with message: `{task_title}` (the task description from `task-XXX.md`)
+   - Use: `jj new --allow-empty -m "{task_title}"`
 
 ### List Tasks
 
