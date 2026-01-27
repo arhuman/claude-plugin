@@ -40,3 +40,7 @@ claude plugins add github:YOUR_USERNAME/global-project-manager-plugin
     ├── task-001-history.md # Task history
     └── ...
 ```
+
+## Licence
+
+MIT License - see LICENSE file for details
