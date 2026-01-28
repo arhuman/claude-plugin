@@ -1,16 +1,12 @@
 ---
 name: global-project-manager
-description: |
-  Centralized task and project management with local storage (.claude/global-project/) and optional S3/Minio synchronization.
-
-  AUTOMATIC TRIGGER: Use this skill whenever a task is requested or a new request/question is submitted (considered as a new task).
-
-  Features: task creation/modification, timestamped status management (backlog, todo, in_progress, done, cancelled), multi-project tracking, separate history to save tokens, optional S3 sync, auto-commit with jj on task completion.
-
-  Supported queries: "What is the current task?", "What are the pending tasks?", "Tasks completed this week?", "Projects in progress?", "Status of project X?"
+description: Centralized task and project management with local storage (.claude/global-project/) and optional S3/Minio synchronization.Use this skill whenever a task is requested or a new request/question is submitted (considered as a new task)
 ---
-
 # Global Project Manager
+
+Features: task creation/modification, timestamped status management (backlog, todo, in_progress, done, cancelled), multi-project tracking, separate history to save tokens, optional S3 sync, auto-commit with jj on task completion.
+
+Supported queries: "What is the current task?", "What are the pending tasks?", "Tasks completed this week?", "Projects in progress?", "Status of project X?"
 
 ## File Structure
 

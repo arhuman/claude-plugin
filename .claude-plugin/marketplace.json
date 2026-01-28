@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "global-project-manager",
-      "source": "./skills/global-project-manager-plugin",
+      "source": "./skills/global-project-manager",
       "category": "development"
     }
   ]
