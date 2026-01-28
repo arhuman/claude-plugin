@@ -1,0 +1,12 @@
+{
+  "name": "arhuman-marketplace",
+  "description": "Arhuman Claude Code plugins",
+  "plugins": [
+    {
+      "name": "global-project-manager",
+      "version": "0.1.0",
+      "source": "https://github.com/arhuman/global-project-manager-plugin",
+      "description": "Global project manager skill for Claude Code"
+    }
+  ]
+}
