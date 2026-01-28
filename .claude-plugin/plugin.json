@@ -1,8 +1,13 @@
 {
   "name": "global-project-manager",
   "description": "Centralized task and project management with local storage and optional S3/Minio synchronization",
+  "homepage": "https://github.com/arhuman/global-project-manager-plugin",
+  "repository": "https://github.com/arhuman/global-project-manager-plugin",
+  "license": "MIT",
+  "version": "0.3.0",
   "author": {
     "name": "Arnaud (Arhuman) ASSAD",
     "email": "arhuman@gmail.com"
-  }
+  },
+  "keywords": ["skills", "tasks", "project", "projects", "task", "jj", "jujustsu"]
 }

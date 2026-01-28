@@ -1,11 +1,15 @@
 {
   "name": "arhuman-marketplace",
   "description": "Arhuman Claude Code plugins",
+  "owner": {
+    "name": "Arnaud (Arhuman) ASSAD",
+    "url": "https://github.com/arhuman"
+  },
   "plugins": [
     {
       "name": "global-project-manager",
-      "version": "0.2.0",
-      "source": "https://github.com/arhuman/global-project-manager-plugin",
+      "version": "0.3.0",
+      "repo": "https://github.com/arhuman/global-project-manager-plugin",
       "description": "Global project manager skill for Claude Code"
     }
   ]
