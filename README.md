@@ -12,7 +12,7 @@ Claude Code plugin for centralized task and project management.
 ## Installation
 
 ```bash
-claude plugins add github:YOUR_USERNAME/global-project-manager-plugin
+claude plugins add github:YOUR_USERNAME/global-project-manager
 ```
 
 ## Task Statuses
@@ -35,10 +35,9 @@ claude plugins add github:YOUR_USERNAME/global-project-manager-plugin
 .claude/global-project/
 ├── project.md              # Project metadata
 ├── project_history.md      # Project history
-└── tasks/
-    ├── task-001.md         # Task
-    ├── task-001-history.md # Task history
-    └── ...
+├── task-001.md         # Task
+├── task-001-history.md # Task history
+└── ...
 ```
 
 ## Licence
