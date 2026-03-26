@@ -2,7 +2,7 @@
 `/evaluate <QUESTION>`
 
 ## Description
-Multi-model evaluation command that compares answers from Claude, Gemini, Mistral, and Qwen on technical questions or architectural challenges. Synthesizes the best insights from all models into an improved final answer.
+Multi-model evaluation command that compares answers from Claude, Gemini and Qwen on technical questions or architectural challenges. Synthesizes the best insights from all models into an improved final answer.
 
 ## Context
 - Technical question or challenge: $ARGUMENTS
@@ -20,7 +20,6 @@ Multi-model evaluation command that compares answers from Claude, Gemini, Mistra
 Execute all model queries in a SINGLE message with multiple tool calls:
 - Write your answer to `.claude/doc/<task-resume>.md`
 - Query Gemini via PAL MCP → `.claude/doc/<task-resume>-gemini.md`
-- Query Mistral via PAL MCP → `.claude/doc/<task-resume>-mistral.md`
 - Query Qwen via PAL MCP → `.claude/doc/<task-resume>-qwen.md`
 
 ### 3. Compare
@@ -42,7 +41,6 @@ Output a summary to the user with key findings and the path to the final doc.
 ## Model Access
 All external models via PAL MCP chat tool:
 - **Gemini**: `model: "google/gemini-2.5-pro"`
-- **Mistral**: `model: "local-mistral"`
 - **Qwen**: `model: "local-qwen"`
 
 Pass identical prompt to ensure fair comparison. Include file paths in `absolute_file_paths` parameter.
@@ -52,7 +50,6 @@ Pass identical prompt to ensure fair comparison. Include file paths in `absolute
 ### Documentation (.claude/doc/)
 - `<task-resume>.md` - Final synthesized answer
 - `<task-resume>-gemini.md` - Gemini's response
-- `<task-resume>-mistral.md` - Mistral's response
 - `<task-resume>-qwen.md` - Qwen's response
 
 ## Constraints

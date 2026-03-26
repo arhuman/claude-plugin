@@ -1,12 +1,13 @@
 ---
 name: global-project-manager
-description: Task and project management in .claude/global-project/. Handles task lifecycle, status tracking, and optional S3 sync.
+description: Task and project management in .claude/global-project/. Use when user ask for a new task.
 allowed-tools: Read, Write, Glob, Bash(jj *), Bash(git *), Bash(tree *), Bash(s4ync *), Bash(which *), Bash(make *), Bash(go *)
 ---
 
 # Global Task Manager
 
 Manages tasks in `.claude/global-project/` with lightweight files + separate history. Auto-commits with jj on completion.
+Handles task lifecycle, status tracking, and optional S3 sync.
 
 ## Quick Reference
 
