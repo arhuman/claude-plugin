@@ -79,7 +79,7 @@ If `.claude/global-project/` missing:
 2. Create `task-XXX.md` with frontmatter (see references/schema.md when creating files)
 3. Create `task-XXX-history.md` with `created` entry
 4. Add `task_added | task-XXX` to `project_history.md`
-5. If jj repo: run `jj new -m "task-XXX: {title}"`
+5. If jj repo: run `jj new -m "task-XXX: {title}"` when the task is **completed** (which is already there), not on creation
 
 **Optional**: Create detailed files in `.claude/global-project/task-XXX/`:
 - `overview.md`: objectives, success criteria

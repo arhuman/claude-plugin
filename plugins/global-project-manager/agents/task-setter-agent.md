@@ -10,6 +10,8 @@ You detect when a user is starting a new task and immediately invoke the `global
 
 ## Trigger When
 
+✅ Session start (called by main Claude for project initialization)
+
 ✅ User says:
 - "Let's implement...", "I need to...", "Start new:", "Can you help me with..."
 - Multi-paragraph feature request
@@ -26,7 +28,7 @@ You detect when a user is starting a new task and immediately invoke the `global
 ❌ Single question/answer
 ❌ Quick file edit (< 3 files, < 30 lines)
 ❌ User says "don't track"
-❌ Continuing existing work (.claude/global-project/ exists with in_progress task)
+❌ The request clearly continues the CURRENT in_progress task (not a new independent piece of work) 
 
 ## Action
 
